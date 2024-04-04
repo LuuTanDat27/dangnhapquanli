@@ -1,11 +1,16 @@
 const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
-registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
-});
-
 loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Kiểm tra username và password
+    if (username === "luutandat" && password === "290907") {
+        // Nếu đúng, chuyển hướng đến trang chủ
+        window.location.href = "URL của trang chủ";
+    } else {
+        // Nếu sai, hiển thị thông báo lỗi hoặc thực hiện các hành động khác
+        alert("Invalid username or password. Please try again.");
+    }
 });
