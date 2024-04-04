@@ -6,7 +6,7 @@ loginBtn.addEventListener('click', () => {
     const password = document.getElementById('password').value;
 
     // Kiểm tra username và password
-    if (username === "luutandat" && password === "290907") {
+    if (username === "luutandat@gmail.com" && password === "290907") {
         // Nếu đúng, chuyển hướng đến trang chủ
         window.location.href = "URL của trang chủ";
     } else {
